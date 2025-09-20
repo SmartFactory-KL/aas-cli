@@ -5,7 +5,7 @@
 <div align="center">
   <a href="https://github.com/SmartFactory-KL/aas-cli/actions/workflows/test.yaml"><img src="https://github.com/SmartFactory-KL/aas-cli/actions/workflows/test.yaml/badge.svg" alt="Test"></a>
   <a href="https://codecov.io/gh/SmartFactory-KL/aas-cli"><img src="https://codecov.io/gh/SmartFactory-KL/aas-cli/branch/main/graph/badge.svg" alt="codecov"></a>
-  <a href="https://pypi.org/project/aas-cli"><img src="https://img.shields.io/pypi/v/aas-clil?color=%2334D058" alt="PyPI - Version"></a>
+  <a href="https://pypi.org/project/aas-cli"><img src="https://img.shields.io/pypi/v/aas-cli?color=%2334D058" alt="PyPI - Version"></a>
   <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Ruff"></a>
 </div>
 
