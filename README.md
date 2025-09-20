@@ -9,9 +9,14 @@
   <a href="https://github.com/astral-sh/ruff"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json" alt="Ruff"></a>
 </div>
 
+<p align="center">
+    <b>Documentation</b>: <a href="https://shellsmith.pages.dev/cli" target="_blank">https://shellsmith.pages.dev/cli</a>
+</p>
+
+
 **aas-cli** is a Python CLI for managing [Asset Administration Shells (AAS)](https://industrialdigitaltwin.org/en/content-hub/aasspecifications), Submodels, and Submodel Elements via the [Eclipse BaSyx](https://www.eclipse.org/basyx/) REST API.
 
-## 🚀 Installation
+## Installation
 
 ```bash
 pip install aas-cli
@@ -19,7 +24,7 @@ pip install aas-cli
 
 **Requires**: Python 3.10+
 
-## 🚀 Usage
+## Usage
 
 ```bash
 aas --help
@@ -41,7 +46,7 @@ aas --help
 
 ➡️ Full CLI reference: [shellsmith.pages.dev/cli](https://shellsmith.pages.dev/cli)
 
-## 🔧 Configuration
+## Configuration
 
 The default AAS environment host is:
 
