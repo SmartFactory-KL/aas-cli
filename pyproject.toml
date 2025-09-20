@@ -41,12 +41,8 @@ dependencies = [
 test = [
     "mypy",
     "pytest",
-#    "pytest-asyncio",
     "pytest-cov",
-#    "pytest-dotenv",
     "ruff",
-#    "types-pyyaml",
-#    "types-requests"
 ]
 
 [project.scripts]
