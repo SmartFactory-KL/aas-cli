@@ -1,0 +1,11 @@
+[run]
+source =
+    src
+omit =
+    .venv
+    aas
+    tests
+
+[report]
+show_missing = True
+skip_covered = False

@@ -1,0 +1,29 @@
+from shellsmith import api
+from typer.testing import CliRunner
+
+from aas_cli.app import app
+
+runner = CliRunner()
+
+
+def test_cli_nuke():
+    runner.invoke(app, ["upload", "aas"])
+    assert len(api.get_shells()["result"]) > 0
+    assert len(api.get_submodels()["result"]) > 0
+
+    result = runner.invoke(app, ["nuke"], input="n\n")
+    assert result.exit_code == 0
+    assert "❎ Aborted. No data was deleted." in result.output
+
+    result = runner.invoke(app, ["nuke"], input="y\n")
+    assert result.exit_code == 0
+    assert "✅ Deleted Shell" in result.output
+    assert "✅ Deleted Submodel" in result.output
+    assert "🎉 All Shells and Submodels have been deleted." in result.output
+    assert len(api.get_shells()["result"]) == 0
+    assert len(api.get_submodels()["result"]) == 0
+
+    result = runner.invoke(app, ["nuke"], input="y\n")
+    assert result.exit_code == 0
+    output = result.output
+    assert "✅ Nothing to delete. The AAS environment is already empty." in output
