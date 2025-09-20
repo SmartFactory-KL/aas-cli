@@ -10,3 +10,4 @@ htmlcov
 site
 venv
 coverage.xml
+CLAUDE.md
